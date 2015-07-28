@@ -35,8 +35,8 @@
 
 - (UIColor *)color
 {
-	if( [_color isEqual:RGBHEX( 0x000000 )] )
-		DEBUG_LOG( @"Unspecified color used for layer %@", _number );
+//	if( [_color isEqual:RGBHEX( 0x000000 )] )
+//		DEBUG_LOG( @"Unspecified color used for layer %@", _number );
 
 	return _color;
 }

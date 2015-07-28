@@ -87,7 +87,6 @@
 		47D3CD0B1844C46D00F58240 /* EAGLEDrawableCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D3CD0A1844C46D00F58240 /* EAGLEDrawableCircle.m */; };
 		47D3CD0E1845375B00F58240 /* EAGLEDrawableArc.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D3CD0D1845375B00F58240 /* EAGLEDrawableArc.m */; };
 		47DF18E51A782DE800513DAA /* GPNetworkIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DF18E41A782DE800513DAA /* GPNetworkIndicator.m */; };
-		47EB3A091A6B09FE00FCCBFA /* #2014-003_Powerpack.sch in Resources */ = {isa = PBXBuildFile; fileRef = 47EB3A081A6B09FE00FCCBFA /* #2014-003_Powerpack.sch */; };
 		47EB3A0C1A6B0BB100FCCBFA /* EAGLESheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EB3A0B1A6B0BB100FCCBFA /* EAGLESheet.m */; };
 		47EB3A0F1A6B136100FCCBFA /* EAGLEModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EB3A0E1A6B136100FCCBFA /* EAGLEModule.m */; };
 		47EF39A218B3512400F653DD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47EF39A118B3512400F653DD /* Settings.bundle */; };
@@ -244,7 +243,6 @@
 		47D3CD0D1845375B00F58240 /* EAGLEDrawableArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLEDrawableArc.m; sourceTree = "<group>"; };
 		47DF18E31A782DE800513DAA /* GPNetworkIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPNetworkIndicator.h; sourceTree = "<group>"; };
 		47DF18E41A782DE800513DAA /* GPNetworkIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPNetworkIndicator.m; sourceTree = "<group>"; };
-		47EB3A081A6B09FE00FCCBFA /* #2014-003_Powerpack.sch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "#2014-003_Powerpack.sch"; path = "../../../../Dropbox (Personal)/Electronics/Projects/#2014-003 Powerpack/#2014-003_Powerpack.sch"; sourceTree = "<group>"; };
 		47EB3A0A1A6B0BB100FCCBFA /* EAGLESheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLESheet.h; sourceTree = "<group>"; };
 		47EB3A0B1A6B0BB100FCCBFA /* EAGLESheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLESheet.m; sourceTree = "<group>"; };
 		47EB3A0D1A6B136100FCCBFA /* EAGLEModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLEModule.h; sourceTree = "<group>"; };
@@ -447,7 +445,6 @@
 			children = (
 				4751137C1A713A9900275407 /* empty_7.2.0.brd */,
 				4751137A1A71388200275407 /* empty_7.2.0.sch */,
-				47EB3A081A6B09FE00FCCBFA /* #2014-003_Powerpack.sch */,
 				473903251840DED90092D025 /* LED_resistor.brd */,
 				473903261840DED90092D025 /* LED_resistor.sch */,
 				473902C41840DC9E0092D025 /* XIB */,
@@ -631,6 +628,11 @@
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Greener Pastures";
+				TargetAttributes = {
+					473902851840D9930092D025 = {
+						DevelopmentTeam = 8PSABBS9C6;
+					};
+				};
 			};
 			buildConfigurationList = 473902811840D9930092D025 /* Build configuration list for PBXProject "EAGLEView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -671,7 +673,6 @@
 				47EF39A218B3512400F653DD /* Settings.bundle in Resources */,
 				473903281840DED90092D025 /* LED_resistor.sch in Resources */,
 				4739029D1840D9930092D025 /* Main.storyboard in Resources */,
-				47EB3A091A6B09FE00FCCBFA /* #2014-003_Powerpack.sch in Resources */,
 				47C5ABB318571A0700A1D530 /* ico_schematic-64.png in Resources */,
 				47FC176118D9C25C008BBDB5 /* ico_board-320.png in Resources */,
 			);
@@ -875,6 +876,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = EagleAppIcon;
 				BUNDLE_ID = dk.greenerpastures.eagleview;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -890,6 +893,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -900,6 +904,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = EagleAppIcon;
 				BUNDLE_ID = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -915,6 +921,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -960,6 +967,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = EagleAppIcon;
 				BUNDLE_ID = "${ENTERPRISE_BUNDLE_ID}";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -975,6 +984,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

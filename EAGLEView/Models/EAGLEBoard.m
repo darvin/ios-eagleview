@@ -30,6 +30,7 @@
 		return nil;
 	}
 
+    NSString * some = [[NSString alloc] initWithData:xmlData encoding:NSUTF8StringEncoding];
 	DDXMLDocument *xmlDocument = [[DDXMLDocument alloc] initWithData:xmlData options:0 error:&err];
 	if( err )
 	{

@@ -240,8 +240,12 @@
 		NSArray *objects = [self.fileView objectsAtPoint:[recognizer locationInView:self.fileView]];
 		DEBUG_LOG( @"Touched %@", objects );
 
-		if( [objects count] == 0 )
-			return;
+        if( [objects count] == 0 ) {
+            self.fileView.highlightedElements = @[];
+            return;
+        }
+        
+        self.fileView.highlightedElements = objects;
 		
 		id clickedObject = objects[ 0 ];
 

@@ -62,7 +62,7 @@ static const CGFloat kHighlightLineWidth = 0.6;	// Width (not zoom dependant) of
 {
 	_zoomFactor = zoomFactor;
 	[self invalidateIntrinsicContentSize];
-	[self setNeedsDisplay];
+//	[self setNeedsDisplay];
 }
 
 - (void)awakeFromNib

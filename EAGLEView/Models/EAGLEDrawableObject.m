@@ -344,7 +344,6 @@ void fillPattern4Function (void *info, CGContextRef context)
 
 - (CGRect)boundingRect
 {
-	ABSTRACTION_ERROR;
 	return CGRectZero;
 }
 
